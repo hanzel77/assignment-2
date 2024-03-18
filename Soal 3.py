@@ -7,9 +7,9 @@ class Person:
         self.weight = weight
         self.height = height
 
-    def bmi(self):
-        BMI_Value = float((self.weight / (self.height)**2))
-        return BMI_Value
+    def BMI_Value(self):
+        bmi = float((self.weight / (self.height)**2))
+        return bmi
         
 x = Person(65, 1.65)
-print(x.bmi())
+print(x.BMI_Value())
